@@ -3,7 +3,10 @@ FROM ubuntu:latest
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
       wget ca-certificates \
+      make \
       gcc g++ \
+      gfortran \
+      python3-dev \
       libgmp-dev \
       libhwloc-dev \
       libpmix-dev \
